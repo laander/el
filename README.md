@@ -29,7 +29,8 @@ Hosted by [RFIT](http://rfit.dk)
 5. edit database.php with your own local DB info
 6. from your project dir, run 'lib/Cake/Console/cake schema create -s NUMBER' (replace with number of the newest schema_NUMBER.php file, e.g. 4), select y & y when asked
 7. now you have a DB with all the tables needed including a little data
-8. kick up your browser and you're baking baby!
+8. Copy (no rename) and configure app/Config/database.php.default and app/Config/core.php.default to app/Config/database.php and app/Config/core.php respectively
+9. kick up your browser and you're baking baby!
 
 mysqladmin path in MAMP (OSX):  
 /Applications/MAMP/Library/bin/mysqladmin
