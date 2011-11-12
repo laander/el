@@ -4,8 +4,6 @@ plugins/
 vendors/
 .git/
 index.php
-README
-.htaccess
 !.gitignore
 
 # Ignoring default cake-files
