@@ -3,7 +3,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $title_for_layout; ?> - <?php echo $cakeDescription; ?>
+		<?php echo $title_for_layout; ?> - RF El
 	</title>
 	<?php
 
@@ -58,12 +58,10 @@
 		<div id="footer">
 			<div class="inside">
 				<div style="float: left;">
-					<div id="footer_object" class="button_beta" style="float: left;">beta<br />v1.4</div>
-					<div id="footer_text" style="float: left;">Roskilde Festival El-system 2010</div>
+					<div id="footer_object" class="button_beta">Alpha v 2.0</div>
 				</div>
 				<div style="float: right;">
-					<div id="footer_object" style="float: right;"><?php echo $this->Html->image('konscript-icon.png', array('alt' => "Konscript", 'border' => "0", 'url' => "http://konscript.com", 'class' => 'konscript-icon'));?></div>
-					<div id="footer_text" style="float: right;">Juiced by</div>
+					<div id="footer_text">RFIT El-system 2011</div>
 				</div>
 			</div>
 		</div>		
