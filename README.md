@@ -18,7 +18,7 @@ Hosted by [RFIT](http://rfit.dk)
 2. mysqladmin -u root -p create roskilde-el
 3. cp app/config/database.php.default app/config/database.php
 4. EDIT AND UPDATE database.php
-5. cake/console/cake schema create -s NUMBER (e.g. 4)
+5. lib/Cake/Console/cake schema create -s NUMBER (e.g. 4)
 
 ## Get started from scratch (detailed)
 
@@ -27,7 +27,7 @@ Hosted by [RFIT](http://rfit.dk)
 3. create an empty MySQL DB called 'roskilde-el' (no tables, just the DB)
 4. copy app/config/database.php.default to app/config/database.php
 5. edit database.php with your own local DB info
-6. from your project dir, run 'cake/console/cake schema create -s NUMBER' (replace with number of the newest schema_NUMBER.php file, e.g. 4), select y & y when asked
+6. from your project dir, run 'lib/Cake/Console/cake schema create -s NUMBER' (replace with number of the newest schema_NUMBER.php file, e.g. 4), select y & y when asked
 7. now you have a DB with all the tables needed including a little data
 8. kick up your browser and you're baking baby!
 
