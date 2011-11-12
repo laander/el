@@ -17,6 +17,7 @@ app/tmp/sessions/*
 app/tmp/tests/*
 app/tmp/*
 app/Config/database.php
+app/Config/core.php
 /lib/Cake/Console/Templates/skel/tmp/
 tags
 
