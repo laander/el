@@ -1,5 +1,4 @@
 # ignore everything but app-folder
-
 lib/
 plugins/
 vendors/
@@ -7,8 +6,6 @@ vendors/
 index.php
 README
 .htaccess
-
-
 !.gitignore
 
 # Ignoring default cake-files
@@ -28,4 +25,3 @@ tags
 !empty
 nbproject/*
 *.*~
-
