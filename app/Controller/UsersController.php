@@ -9,13 +9,14 @@ class UsersController extends AppController {
 
 	// action specific permissions
     public $permissions = array(
-    	'index' => '*'
+    	'delete' => array('editor'),
     );     
 
 	// allow action login for everybody
 	function beforeFilter(){
 		parent::beforeFilter(); 
 		$this->Auth->allow('login');
+		$this->Auth->allow('logout');		
 	}
 
 	// basic auth
@@ -30,7 +31,7 @@ class UsersController extends AppController {
 	}
 
 	function logout() {
-		//Leave empty for now.
+		$this->redirect($this->Auth->logout());
 	}
 
 /**

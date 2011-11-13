@@ -1,11 +1,12 @@
 <?php
 class AppController extends Controller {
-    public $components = array('Auth', 'RequestHandler');       
+    public $components = array('Auth', 'RequestHandler', 'Session');       
     public $permissions = array();     
     public $helpers = array('Html', 'Form', 'Session');
 
     function beforeFilter() {    
     
+    	// init isAuthorize() - action specific check
 		$this->Auth->authorize = array('Controller');
     
         //Configure AuthComponent
@@ -15,16 +16,41 @@ class AppController extends Controller {
     }
     
     function isAuthorized(){ 
-    	debug($this->Auth->user());
-		
+    
+    debug($this->Auth->user('role_id'));
+		// allow admins access to everything
         if($this->Auth->user('role_id') == '1'){
-			return true; //Remove this line if you don't want admins to have access to everything by default
+			return true; 
 		}			 
-        if(!empty($this->permissions[$this->action])){ 
-            if($this->permissions[$this->action] == '*') return true; 
-            if(in_array($this->Auth->user('group'), $this->permissions[$this->action])) return true; 
+		
+		// default permissions
+		$permissions_default = array(
+			'view' => '*',
+			'index' => '*'
+		);     
+		
+		// override default perms
+		$permissions = array_merge($permissions_default, $this->permissions);
+		
+		// check permission for action 
+        if(!empty($permissions[$this->action])){ 
+        
+        	// access for everyone (all logged in users)
+            if($permissions[$this->action] == '*'){ 
+            	return true;               
+        	}
+               
+           // 
+			$roles = array(
+				1 => 'admin',
+				2 => 'editor',
+				3 => 'visitor'
+			);
+            $role_alias = $roles[$this->Auth->user('role_id')];
+            
+            // access for specific role
+            if(in_array($role_alias, $permissions[$this->action])) return true; 
         } 
-
         return false; 
          
     }     
