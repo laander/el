@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * @property User $User
  */
 class Role extends AppModel {
+
 /**
  * Validation rules
  *

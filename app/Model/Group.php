@@ -8,6 +8,7 @@ App::uses('AppModel', 'Model');
  * @property User $User
  */
 class Group extends AppModel {
+
 /**
  * Validation rules
  *
