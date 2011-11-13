@@ -6,6 +6,6 @@ App::uses('AppController', 'Controller');
  * @property GroupsUser $GroupsUser
  */
 class GroupsUsersController extends AppController {
-
+  public $scaffold;
 
 }

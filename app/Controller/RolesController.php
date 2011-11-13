@@ -6,6 +6,6 @@ App::uses('AppController', 'Controller');
  * @property Role $Role
  */
 class RolesController extends AppController {
-
+  public $scaffold;
 
 }

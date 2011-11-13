@@ -92,10 +92,10 @@ hr {
 		background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(#f3f3f3));
 		background-image: -moz-linear-gradient(top, #dbdbdb, #f3f3f3);		
 		border-bottom: 1px solid #cfd1d1;
-		-moz-border-radius-topleft: 8px;
-		-webkit-border-top-left-radius: 8px;
-		-moz-border-radius-topright: 8px;
-		-webkit-border-top-right-radius: 8px; }
+		-moz-border-radius-topleft: 4px;
+		-webkit-border-top-left-radius: 4px;
+		-moz-border-radius-topright: 4px;
+		-webkit-border-top-right-radius: 4px; }
 		
 	#content {
 		width: 100%;
@@ -110,10 +110,10 @@ hr {
 		border-left: 1px solid #cfd1d1;
 		border-right: 1px solid #cfd1d1;
 		border-bottom: 1px solid #cfd1d1;		
-		-moz-border-radius-bottomleft: 8px;
-		-webkit-border-bottom-left-radius: 8px;
-		-moz-border-radius-bottomright: 8px;
-		-webkit-border-bottom-right-radius: 8px;
+		-moz-border-radius-bottomleft: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+		-moz-border-radius-bottomright: 4px;
+		-webkit-border-bottom-right-radius: 4px;
 		-moz-box-shadow: 0px 8px 18px #d9dcdc;
 		-webkit-box-shadow: 0px 8px 18px #d9dcdc; }	
 					
@@ -369,9 +369,9 @@ form .submit input[type=submit] {
 	background-image: -moz-linear-gradient(top, #ff7e00, #ec5400);
 	color:#fff;
 	border:1px solid #ec5400;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 	text-decoration:none;
 	text-shadow: #ec5400 0px 1px 0px;
 	min-width: 0;
@@ -396,9 +396,9 @@ fieldset .error .error-message { color: red; }
 	padding: 5px 8px 5px 8px;
 	display: none;
 	float: right;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 }
 #authMessage { /* Red */
 	color: #fff;
@@ -458,9 +458,9 @@ div.actions ul li a {
 	background-image: -moz-linear-gradient(top, #f7f7f7, #e6e6e6);
 	color:#333;
 	border:1px solid #d7d7d7;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 	text-decoration:none;
 	text-shadow: #fff 0px 1px 0px;
 	min-width: 0;
@@ -488,9 +488,9 @@ td.actions a {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e6e6e6));
 	background-image: -moz-linear-gradient(top, #f7f7f7, #e6e6e6); */
 	color:#333;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 /*	text-decoration: underline; */
 	text-shadow: #fff 0px 1px 0px;
 	min-width: 0;
@@ -507,15 +507,15 @@ td.actions a:hover {
 
 a.button_usermeta {
 	font-weight:normal;
-	padding: 4px 6px 3px 6px;
+	padding: 6px 8px 6px 8px;
 	background: #2d2e2e;
 	/*background: -webkit-gradient(linear, left top, left bottom, from(#2a2a2a), to(#414141));
 	background-image: -moz-linear-gradient(top, #2a2a2a, #414141); */
 	color:#fff;
 	border:1px solid #000;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 	text-decoration:none;
 	min-width: 0;
 }
@@ -529,9 +529,9 @@ a.button_usermeta:hover {
 	margin-right: 10px;
 	background: #c0c2c2;
 	color:#fff;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 	min-width: 0;
 	float: left;
 }

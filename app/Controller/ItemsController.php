@@ -6,6 +6,6 @@ App::uses('AppController', 'Controller');
  * @property Item $Item
  */
 class ItemsController extends AppController {
-
+  public $scaffold;
 
 }
