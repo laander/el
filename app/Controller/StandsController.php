@@ -6,6 +6,6 @@ App::uses('AppController', 'Controller');
  * @property Stand $Stand
  */
 class StandsController extends AppController {
-
+  public $scaffold;
 
 }

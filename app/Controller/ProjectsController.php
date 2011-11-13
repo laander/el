@@ -7,7 +7,6 @@ App::uses('AppController', 'Controller');
  */
 class ProjectsController extends AppController {
 
-
 /**
  * index method
  *

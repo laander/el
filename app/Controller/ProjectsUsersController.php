@@ -6,6 +6,6 @@ App::uses('AppController', 'Controller');
  * @property ProjectsUser $ProjectsUser
  */
 class ProjectsUsersController extends AppController {
-
+  public $scaffold;
 
 }

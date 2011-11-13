@@ -7,10 +7,12 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
+	// action specific permissions
     public $permissions = array(
     	'index' => '*'
     );     
 
+	// allow action login for everybody
 	function beforeFilter(){
 		parent::beforeFilter(); 
 		$this->Auth->allow('login');
